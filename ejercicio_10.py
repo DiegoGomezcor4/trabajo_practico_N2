@@ -30,10 +30,13 @@ def es_primo(numero):
             return False
     return True
 
-def factorial():
-    pass
+def factorial(numero):
+    if numero == 0:
+        return 1
+    return numero * factorial(numero - 1)
 
-numero = int(input("por favor ingrese un numero entero positivo: "))
+
+numero = int(input('por favor ingrese un numero entero positivo: '))
 
 print('a. Todos los números impares desde 1 hasta ese número separados por comas: ')
 numeros_impares(numero)
@@ -41,6 +44,10 @@ numeros_impares(numero)
 print('b. La cuenta atrás desde ese número hasta cero separados por comas: ')
 cuenta_atras(numero)
 
-print('c. Que indique si es primo o no: ')
-print("es primo") if es_primo(numero) else print("no es primo")
+print('c. indique si es primo o no: ')
+print('es primo') if es_primo(numero) else print('no es primo') #operador ternario
+print()
+
+print('su factorial:')
+print(factorial(numero))
 
