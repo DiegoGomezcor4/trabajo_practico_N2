@@ -9,9 +9,7 @@ el grupo que le corresponde.
 def grupo(nombre, sexo):
     nombre = nombre.lower()
     sexo = sexo.lower()
-    if sexo == 'mujer' and nombre[0] < 'm':
-        return 'Grupo A'
-    elif sexo == 'hombre' and nombre[0] > 'n':
+    if (sexo == 'mujer' and nombre[0] < 'm') or (sexo == 'hombre' and nombre[0] > 'n'):
         return 'Grupo A'
     else:
         return 'Grupo B'
