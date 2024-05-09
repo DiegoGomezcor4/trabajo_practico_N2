@@ -10,7 +10,8 @@ def numeros_impares(numero):
     for i in range(1, numero):
         if (i % 2 != 0):
             print(i, end=", ")
-    print("")
+    print()
+    print()
 
 
 def cuenta_atras(numero):
@@ -18,11 +19,16 @@ def cuenta_atras(numero):
     while i >= 0:
         print(i, end=", ")
         i -= 1
+    print()
+    print()
 
-
-def es_primo():
-    pass
-
+def es_primo(numero):
+    if numero <= 1:
+        return False
+    for i in range(2, numero):
+        if numero % i == 0:
+            return False
+    return True
 
 def factorial():
     pass
@@ -36,5 +42,5 @@ print('b. La cuenta atrás desde ese número hasta cero separados por comas: ')
 cuenta_atras(numero)
 
 print('c. Que indique si es primo o no: ')
-es_primo(numero)
+print("es primo") if es_primo(numero) else print("no es primo")
 
