@@ -5,7 +5,8 @@ informarle que no se puede procesar el dato
 """
 
 def es_vocal(letra):
-    vocales = 'aeiouAEIOU'
+    vocales = 'aeiou'
+    letra = letra.lower()
     if letra in vocales:
         return True
     else:
@@ -13,14 +14,14 @@ def es_vocal(letra):
 
 
 while True:
-        letra = input("Ingrese una letra: ")
+        letra = input('Ingrese una letra: ')
         if len(letra) != 1:
-            print("Por favor, ingrese solo un carácter.")
+            print('Por favor, ingrese solo un carácter.')
             continue
         if es_vocal(letra):
-            print("Es vocal.")
+            print('Es vocal.')
         else:
-            print("No es vocal.")
+            print('No es vocal.')
 
         break    
 

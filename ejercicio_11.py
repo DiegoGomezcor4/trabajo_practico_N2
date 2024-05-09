@@ -5,7 +5,7 @@ encuentran en dicha frase.
 
 def contar_vocales(frase):
     frase = frase.lower()
-    vocales = ['a', 'e', 'i', 'o', 'u']
+    vocales = 'aeiou'
     cantidad_vocales = 0
     for letra in frase:
         if letra in vocales:
