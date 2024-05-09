@@ -11,9 +11,9 @@ def total_factura_con_iva(cantidad_sin_iva, porcentaje_iva = 21):
 
 # Pruebas:
 
-print(f'El total de la factra es: {total_factura_con_iva(1000, 21)}')
-print(f'El total de la factra es: {total_factura_con_iva(1000, 10.5)}')
-print(f'El total de la factra es: {total_factura_con_iva(1000)}')
+print(f'El total de la factura es: ${total_factura_con_iva(1000, 21)}')
+print(f'El total de la factura es: ${total_factura_con_iva(1000, 10.5)}')
+print(f'El total de la factura es: ${total_factura_con_iva(1000)}')
 
 
 
