@@ -48,10 +48,10 @@ if num.isdigit():
         cuenta_atras(num)
 
         print('c. indique si es primo o no: ')
-        print('es primo') if es_primo(num) else print('no es primo') #operador ternario
+        print('Si es primo') if es_primo(num) else print('No es primo') #operador ternario
         print()
 
-        print('su factorial:')
+        print('d. su factorial:')
         print(factorial(num))
         print()
 
