@@ -9,7 +9,7 @@ d. Por último, su factorial
 def numeros_impares(numero):
     for i in range(1, numero):
         if (i % 2 != 0):
-            print(i, end=", ")
+            print(i, end=", ")  # end=", " le dice a Python que imprima una coma seguida de un espacio en lugar de ir a la siguiente línea
     print()
     print()
 
