@@ -15,10 +15,9 @@ def numeros_impares(numero):
 
 
 def cuenta_atras(numero):
-    i = numero
-    while i >= 0:
-        print(i, end=", ")
-        i -= 1
+    while numero >= 0:
+        print(numero, end=", ")
+        numero -= 1
     print()
     print()
 
