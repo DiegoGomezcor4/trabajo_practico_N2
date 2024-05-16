@@ -9,3 +9,5 @@ def saludo(nombre):
 #prueba:
 saludo("Diego")
 saludo("Javier")
+
+saludo(input("Por favor ingrese un nombre: "))
