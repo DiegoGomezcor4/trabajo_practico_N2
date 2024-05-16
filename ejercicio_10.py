@@ -36,18 +36,25 @@ def factorial(numero):
     return numero * factorial(numero - 1)
 
 
-numero = int(input('por favor ingrese un numero entero positivo: '))
+num = input('por favor ingrese un numero entero positivo: ')
 
-print('a. Todos los números impares desde 1 hasta ese número separados por comas: ')
-numeros_impares(numero)
+if num.isdigit():
+    num = int(num)
+    if num >= 0:
+        print('a. Todos los números impares desde 1 hasta ese número separados por comas: ')
+        numeros_impares(num)
 
-print('b. La cuenta atrás desde ese número hasta cero separados por comas: ')
-cuenta_atras(numero)
+        print('b. La cuenta atrás desde ese número hasta cero separados por comas: ')
+        cuenta_atras(num)
 
-print('c. indique si es primo o no: ')
-print('es primo') if es_primo(numero) else print('no es primo') #operador ternario
-print()
+        print('c. indique si es primo o no: ')
+        print('es primo') if es_primo(num) else print('no es primo') #operador ternario
+        print()
 
-print('su factorial:')
-print(factorial(numero))
+        print('su factorial:')
+        print(factorial(num))
+        print()
+
+else:
+    print('El numero tiene que ser entero y positivo')
 
