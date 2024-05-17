@@ -11,10 +11,10 @@ def es_bisiesto(anio):
     else:
         return False 
 
-anio = int(input("Por favor ingrese un año para comprobar si es bisiesto: "))
-es_bisiesto(anio)
+anio_ingresado = int(input("Por favor ingrese un año para comprobar si es bisiesto: "))
+es_bisiesto(anio_ingresado)
 
-if es_bisiesto(anio):
-    print(anio, 'es año bisiesto')
+if es_bisiesto(anio_ingresado):
+    print(anio_ingresado, 'es año bisiesto')
 else:
-    print(anio, 'no es un año bisiesto')
+    print(anio_ingresado, 'no es un año bisiesto')
