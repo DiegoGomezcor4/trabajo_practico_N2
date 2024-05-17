@@ -14,7 +14,7 @@ def grupo(nombre, sexo):
     else:
         return 'Grupo B'
 
-nombre = input('Por favor ingrese su nombre: ')
-sexo = input('Ingrese su sexo: ')
+nombre_ingresado = input('Por favor ingrese su nombre: ')
+sexo_ingresado = input('Ingrese su sexo hombre/mujer: ')
 
-print(f'Usted pertenece a el: {grupo(nombre, sexo)}')
+print(f'Usted pertenece a el: {grupo(nombre_ingresado, sexo_ingresado)}')
