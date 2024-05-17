@@ -19,7 +19,7 @@ def comprobar_dia(dia):
             print('El dia ingresado no tiene comentarios')
 
 
-dia = input('Por favor, ingrese un dia de la semana: ')
-comprobar_dia(dia)
+dia_ingresado = input('Por favor, ingrese un dia de la semana: ')
+comprobar_dia(dia_ingresado)
 
 
