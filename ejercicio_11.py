@@ -3,11 +3,11 @@
 encuentran en dicha frase.
 """
 
-def contar_vocales(frase):
-    frase = frase.lower()
+def contar_vocales(texto):
+    texto = texto.lower()
     vocales = 'aeiouáéíóú'
     cantidad_vocales = 0
-    for letra in frase:
+    for letra in texto:
         if letra in vocales:
             cantidad_vocales += 1
     return cantidad_vocales
